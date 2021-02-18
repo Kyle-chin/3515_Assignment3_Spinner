@@ -7,7 +7,7 @@
     tools:context=".ImageActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewID"
         android:layout_width="379dp"
         android:layout_height="346dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +21,10 @@
         android:id="@+id/spinner_Valorant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="19dp" />
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
