@@ -29,13 +29,13 @@ public class ImageActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageViewID);
         characterDescription = findViewById(R.id.textViewID);
         ArrayList Valheros = new ArrayList<String>();
-        Valheros.add("Select a Charecter...");
-        Valheros.add("Killjoy");
-        Valheros.add("Omen");
-        Valheros.add("Phoenix");
-        Valheros.add("Sage");
-        Valheros.add("Sova");
-        Valheros.add("Yoru");
+        Valheros.add("Select a Character...");
+        Valheros.add("Killjoy, Mechanic Controller");
+        Valheros.add("Omen, Smoke and Mind Game Controller");
+        Valheros.add("Phoenix, Fire Duelist");
+        Valheros.add("Sage, Combat Medic");
+        Valheros.add("Sova, Technological Hunter");
+        Valheros.add("Yoru, Rift Walker");
 
         ValHeroesArray = new  int[]{R.drawable.ic_launcher_foreground,R.drawable.killjoy, R.drawable.omen, R.drawable.phoenix_artwork, R.drawable.sage, R.drawable.sova, R.drawable.yoru};
 
@@ -50,6 +50,8 @@ public class ImageActivity extends AppCompatActivity {
                 Toast.makeText(ImageActivity.this, "Character Selected", Toast.LENGTH_SHORT).show();
                 showPicture(position);
                 characterDescription.setText((parent.getItemAtPosition(position)).toString());
+                characterDescription.setTextSize(30);
+                characterDescription.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
             }
 
             @Override

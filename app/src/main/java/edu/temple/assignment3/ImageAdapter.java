@@ -43,7 +43,7 @@ public class ImageAdapter extends BaseAdapter {
 
         textView.setPadding(10, 10, 0,0);
         textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-        textView.setTextSize(18);
+        textView.setTextSize(22);
 
         return textView;
     }
@@ -59,7 +59,7 @@ public class ImageAdapter extends BaseAdapter {
             textView = new TextView(context);
             imageView = new ImageView(context);
             textView.setPadding(10, 15, 15, 15);
-            textView.setTextSize(20);
+            textView.setTextSize(22);
             linearLayout.setOrientation(LinearLayout.HORIZONTAL);
             linearLayout.addView(imageView);
             linearLayout.addView(textView);
@@ -71,7 +71,7 @@ public class ImageAdapter extends BaseAdapter {
             imageView = (ImageView) linearLayout.getChildAt(0);
             textView = (TextView) linearLayout.getChildAt(1);
         }
-        imageView.setImageResource(ValHeroesArray[0]);
+        imageView.setImageResource(ValHeroesArray[position]);
         textView.setText(items.get(position));
 
         return linearLayout;
